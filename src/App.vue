@@ -1,17 +1,45 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <test-hoc :message="message" @abc="handle">
+      <template v-slot:header>
+        这是一个具名插槽
+      </template>
+      这是一个默认插槽
+    </test-hoc>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <test :message="message" @abc="handle">
+      <template v-slot:header>
+        这是一个具名插槽
+      </template>
+      这是一个默认插槽
+    </test>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import HOC from './HOC'
+import Test from './components/Test'
+const TestHoc = HOC(Test)
+console.log(TestHoc)
 export default {
   name: 'app',
+  data() {
+    return {
+      message: 'Hello World'
+    }
+  },
+  methods: {
+    handle() {
+      console.log('events')
+    }
+  },
   components: {
-    HelloWorld
+    TestHoc,
+    Test
   }
 }
 </script>
