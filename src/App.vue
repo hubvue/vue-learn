@@ -1,17 +1,21 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <error-boundary>
+    <div id="app">
+      <img alt="Vue logo" src="./assets/logo.png" />
+      <div>Helloworld</div>
+      <HelloWorld msg="Welcome to Your Vue.js App" />
+    </div>
+  </error-boundary>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
+import ErrorBoundary from './components/ErrorBoundary'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld,
+    ErrorBoundary
   }
 }
 </script>
