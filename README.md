@@ -6,6 +6,7 @@
 - [**this.$emit的返回值是什么？如果需要自定义事件的返回值，应该怎么做？**](https://github.com/hubvue/vue-learn/issues/6)
 - [**相同名称的插槽是合并还是替换？**](https://github.com/hubvue/vue-learn/issues/7)
 - [**数组的index作为key会有什么问题？**](https://github.com/hubvue/vue-learn/issues/8)
+- [**数组有哪些方法支持响应式更新，底层原理是如何实现的？**](https://github.com/hubvue/vue-learn/issues/9)
 
 ## 开发模式
 - [**高阶组件**](https://github.com/hubvue/vue-learn/tree/HOC)
