@@ -18,7 +18,6 @@ export default {
   },
   methods: {
     add() {
-      throw new Error('error')
       this.count++
     }
   },
