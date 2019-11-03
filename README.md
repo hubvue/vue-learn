@@ -13,3 +13,4 @@
 - [**高阶组件**](https://github.com/hubvue/vue-learn/tree/HOC)
 - [**错误边界**](https://github.com/hubvue/vue-learn/tree/error-boundary)
 - [**类组件**](https://github.com/hubvue/vue-learn/tree/class-component)
+- [**注入公共组件的方式**](https://github.com/hubvue/vue-learn/tree/require-context)
